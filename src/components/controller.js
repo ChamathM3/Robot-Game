@@ -1,3 +1,12 @@
+/*
+  This is the Controller
+  Using this controller user can move robot various directions.
+
+
+  Author :- Chamath Madusanka
+  email  :- adc.madusanka@gmail.com
+*/
+
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 // import external css
