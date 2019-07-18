@@ -1,3 +1,12 @@
+/*
+  This is the main game area
+  there are contain Game controller and game area.
+
+
+  Author :- Chamath Madusanka
+  email  :- adc.madusanka@gmail.com
+*/
+
 import React, { Component } from "react";
 
 // components

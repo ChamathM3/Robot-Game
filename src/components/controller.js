@@ -90,36 +90,44 @@ export default class Controller extends Component {
       // move up
       row = Number(robotCurrentPosition.charAt(1)) + 1;
       coloumn = Number(robotCurrentPosition.charAt(3));
+      // check robot trying to get off table edge
       if (row <= 5 && row > 0 && coloumn <= 5 && coloumn > 0) {
         robotUpdatedPosition = "r" + row + "c" + coloumn;
       } else {
+        // if robot trying to get off this way robot stays same place
         robotUpdatedPosition = this.state.currentPosition;
       }
     } else if (num === 2) {
       // move right
       row = Number(robotCurrentPosition.charAt(1));
       coloumn = Number(robotCurrentPosition.charAt(3)) + 1;
+      // check robot trying to get off table edge
       if (row <= 5 && row > 0 && coloumn <= 5 && coloumn > 0) {
         robotUpdatedPosition = "r" + row + "c" + coloumn;
       } else {
+        // if robot trying to get off this way robot stays same place
         robotUpdatedPosition = this.state.currentPosition;
       }
     } else if (num === 3) {
       // move down
       row = Number(robotCurrentPosition.charAt(1)) - 1;
       coloumn = Number(robotCurrentPosition.charAt(3));
+      // check robot trying to get off table edge
       if (row <= 5 && row > 0 && coloumn <= 5 && coloumn > 0) {
         robotUpdatedPosition = "r" + row + "c" + coloumn;
       } else {
+        // if robot trying to get off this way robot stays same place
         robotUpdatedPosition = this.state.currentPosition;
       }
     } else if (num === 4) {
       // move left
       row = Number(robotCurrentPosition.charAt(1));
       coloumn = Number(robotCurrentPosition.charAt(3)) - 1;
+      // check robot trying to get off table edge
       if (row <= 5 && row > 0 && coloumn <= 5 && coloumn > 0) {
         robotUpdatedPosition = "r" + row + "c" + coloumn;
       } else {
+        // if robot trying to get off this way robot stays same place
         robotUpdatedPosition = this.state.currentPosition;
       }
     }

@@ -1,3 +1,13 @@
+/*
+  This is the game Area
+  this component set robot play area.
+  by clicking certaim place robot will teleport(according to distance teleporting time will change).
+
+
+  Author :- Chamath Madusanka
+  email  :- adc.madusanka@gmail.com
+*/
+
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 // import external css
