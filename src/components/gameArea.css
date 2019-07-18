@@ -1,0 +1,15 @@
+.cell {
+  width: 80px;
+  height: 80px;
+  color: gray;
+  font-size: smaller;
+  text-align: center;
+  background-color: darkgray;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.robotInitials {
+  width: 70px;
+  height: 70px;
+}
